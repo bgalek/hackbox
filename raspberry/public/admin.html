@@ -7,7 +7,7 @@
     <title>HackCube Airlines admin page</title>
 
     <link href="bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/hours_visibility.js" defer></script>
 
     <style>
       .bd-placeholder-img {
@@ -25,8 +25,6 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
@@ -43,6 +41,9 @@
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
+          <a href="file/hackcubepassengers.csv" download>
+            <button id="downloadList" class="btn btn-lg btn-secondary btn-block invisible" type="submit">Download passenger list</button>
+          </a>
           <li class="nav-item">
             <a class="nav-link active" href="#">
               <span data-feather="home"></span>
